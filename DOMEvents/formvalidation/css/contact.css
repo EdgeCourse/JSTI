@@ -1,0 +1,16 @@
+form{
+	padding: 2em;
+}
+
+input.error {
+  /*box-shadow: 0 2px 3px red;*/
+  border: red solid 2px;
+  opacity: 0.5;
+}
+
+.msg{
+	color: red;
+	display: none;
+}
+
+

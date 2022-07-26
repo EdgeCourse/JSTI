@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="btn">Start Trace</button>
+<script>
+/*
+//assert
+let x = 5;
+let y = 5;
+console.assert(x + y == 11, "Expression returned 'false'");
+
+//clear
+//Clear all messages in the console:
+
+console.clear();
+
+//debug
+
+
+//error
+//Write an error to the console:
+
+console.error("You made a mistake");
+
+//group
+//Create a group of messages in the console:
+
+console.log("Hello world!");
+console.group();
+console.log("Hello again, this time inside a group!");
+
+//groupcollapsed
+//Create a collapsed group of messages in the console:
+
+console.log("Hello world!");
+console.groupCollapsed();
+console.log("Hello again, this time inside a collapsed group!");
+
+
+//End a message group with console.groupEnd():
+
+console.log("Hello world!");
+console.group();
+console.log("Hello again, this time inside a group!");
+console.groupEnd();
+console.log("and we are back.");
+*/
+/*
+Technically console.debug() console.info() and console.log() are identical - the only difference is that debug messages are hidden by default and log messages are visible in the recent versions of Chrome (to see debug messages, you have to set the log level to Verbose in the Devtools)
+
+*/
+
+//debug
+//console.debug("debugging")
+
+//Write a message to the console:
+
+//console.info("Hello world from info!");
+
+//Write an array as a table in the console:
+
+//console.table(["Audi", "Volvo", "Ford"]);
+
+//Write an object as a table in the console:
+
+//console.table({firstname:"John", lastname:"Doe"});
+
+//The time it takes to run a for-loop 100.000 times:
+/*
+console.time();
+for (let i = 0; i < 100000; i++) {
+  // some code
+}
+console.timeEnd();
+*/
+//Show how the code ended up here:
+
+
+function myFunction() {
+  myOtherFunction();
+}
+
+function myOtherFunction() {
+  console.trace();
+}
+
+document.getElementById("btn").onclick= myFunction
+
+//Write a warning to the console:
+
+console.warn("This is a warning!");
+
+</script>
+
+</body>
+</html>

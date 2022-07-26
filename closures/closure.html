@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+<body>
+
+
+<button type="button" id="btn">Count!</button>
+
+<p id="demo">0</p>
+
+<script>
+/*
+var a = 4;
+
+ myFunction();
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = a * a;
+} 
+*/
+/*
+var myFunction = function() {
+  document.getElementById("demo").innerHTML = a * a;
+} 
+*/
+ 
+
+ document.getElementById("btn").addEventListener("click", 
+ function (){
+  document.getElementById("demo").innerHTML = add();
+})
+
+
+const add = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter;}
+})()
+
+
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+</body>
+</html>
